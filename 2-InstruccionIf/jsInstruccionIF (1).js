@@ -1,11 +1,12 @@
 function Mostrar()
 {
 //tomo la edad  
-var edad = document.getElementById("edad").value
-if(edad == 15)
-{
-    alert("Niña bonita")
+años = document.getElementById("edad").value
 
+if (años = 15) {
+    alert("niña bonita")
+} else {
+    alert("niña fea")
 }
 
 

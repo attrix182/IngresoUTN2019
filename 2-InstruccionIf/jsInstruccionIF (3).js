@@ -1,3 +1,4 @@
+  
 function Mostrar()
 {
 //tomo la edad  
@@ -7,7 +8,8 @@ if(edad >= 18)
 {
     alert("la persona es mayor de edad");
 } else {
-    alert("es menor de edad");
+    alert("la persona es menor de edad");
 }
 
-}//FIN DE LA FUNCIÓN
+}
+
