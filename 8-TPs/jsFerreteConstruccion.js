@@ -6,25 +6,30 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 
 function Rectangulo () 
 {
-    var largo = parseFloat(document.getElementById("Largo").value);
-    var ancho = parseFloat(document.getElementById("Ancho").value);
-    var alambre = (largo *2 + ancho *2) *3
+    var largo = parseFloat(document.getElementById("Largo").value)
+    var ancho = parseFloat(document.getElementById("Ancho").value)
+    var alambre = (largo *2 + ancho *2)*3
 
-    alert("necesita " + alambre.toFixed(2) + " M de alambre"); 
+    alert("necesita " + alambre + " M " + "para cubrir el terreno con 3 hilos")
+
 }
 function Circulo () 
 {
-    var radio = parseFloat(document.getElementById("Radio").value);
-    var calculaRadio = radio * 2 * 3.14
-	alert("necesita " + calculaRadio.toFixed(2));
+    var radio = parseFloat(document.getElementById("Radio").value)
+    var terreno = radio *2 *Math.PI
+    var alambre = terreno *3
+
+    alert("necesita M " + alambre.toFixed(2) + " de alambre")
+
 }
 function Materiales () 
 {
-    var largo = parseFloat(document.getElementById("Largo").value);
-    var ancho = parseFloat(document.getElementById("Ancho").value);
-    var cemento = (largo + ancho) *2
-    var cal = (largo + ancho) *3
+    var largo = parseFloat(document.getElementById("Largo").value)
+    var ancho = parseFloat(document.getElementById("Ancho").value)
+    var superficie = largo * ancho
+    var cemento = superficie * 2
+    var cal = superficie * 3
 
-alert("Necesita bolsas de " + cemento " y " + cal " bolsas de cal");
-	
-} 
+    alert("necesita " + cemento + " bolsas de cemento y " + cal + " bolsas de cal")
+    
+}
