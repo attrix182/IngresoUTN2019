@@ -1,11 +1,14 @@
+
 function Mostrar()
 {
 
-	var numero = prompt("ingrese un número entre 0 y 10.");
-
-while (numero <= 9) {
-  alert("numero dentro del conjunto " + numero)
+var sexo = prompt("ingrese f ó m .");
+while (sexo != "f" && sexo != "m" && sexo != "F" && sexo != "M") {
+	sexo = prompt("ingrese")
 }
-alert("numero fuera del conjunto " + numero)
+
+
+
+document.getElementById('Sexo').value=sexo;
 
 }//FIN DE LA FUNCIÓN
