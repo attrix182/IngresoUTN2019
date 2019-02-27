@@ -8,6 +8,11 @@ while (contador <= 5)
 {
 	ingreso = parseFloat(prompt("ingrese 5 numeros"));
 
+	while (isNaN(numero)) {
+		numero = parseInt(prompt("ingrese un numero valido"));
+
+	}
+
 	acumulador = acumulador + ingreso;
 
 	contador++;
