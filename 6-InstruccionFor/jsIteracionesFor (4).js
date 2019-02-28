@@ -1,10 +1,15 @@
-function Mostrar()
-{
-var i;
+function Mostrar() {
+    var i;
 
-for (i = 0; index < array.length; index++) {
-    const element = array[index];
-}
+    for (i = 0; i < 100; i++) {
+        console.log(i);
+        if (i == 10) {
+            break;
+        }
+
+
+    }
+
 
 
 }//FIN DE LA FUNCIÓN

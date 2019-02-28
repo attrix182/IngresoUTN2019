@@ -1,26 +1,21 @@
 function Mostrar() {
-
-    var numero = 0;
+    var numero;
+    var cantidad = 0;
     numero = parseInt(prompt("ingrese un numero"));
-    while (isNaN(numero)) {
-    
+    while (numero <= 0 || isNaN(numero)) {
+
         numero = parseInt(prompt("ingrese un numero valido"));
+    }
+
+
+
+    for (i = 1; i <= numero; i++) {
+
+        if (i % 2 == 0) {
+            cantidad++;
+            console.log(i)
         }
-
-
-        var cantidad = 0;
-
-    
-    for (i = 2; i <= numero; i = i + 2) {
-
-
-        cantidad = cantidad + 1;
-        alert(i);
+        console.log("cantidad de pares " + cantidad)
 
     }
-    cantidad = cantidad;
-    alert("numero " + cantidad);
-
-
-
 }//FIN DE LA FUNCIÓN
